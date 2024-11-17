@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registerpage"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/Rpass"
+        android:layout_alignBottom="@+id/regbtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-179dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="-185dp"
+        android:src="@drawable/logcircle" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_above="@+id/regbtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="259dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-81dp"
+        android:layout_marginBottom="336dp"
+        android:src="@drawable/logcircle" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-102dp"
+        android:layout_marginEnd="265dp"
+        android:layout_marginRight="350dp"
+        android:layout_marginBottom="346dp"
+        android:src="@drawable/logcircle" />
+
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Your Account"
+        android:id="@+id/regtxt1"
+        android:layout_marginTop="80dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/pink"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:elevation="6dp"
+        android:id="@+id/Rname"
+        android:fadingEdgeLength="4dp"
+        android:layout_below="@id/regtxt1"
+        android:layout_marginTop="96dp"
+        android:textColorHint="@color/pink"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:background="@drawable/epcolor"
+        android:padding="16dp"
+        android:layout_marginLeft="50dp"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:id="@+id/Remail"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:elevation="6dp"
+        android:layout_below="@+id/Rname"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/pink"
+        android:background="@drawable/epcolor"
+        android:padding="16dp"
+        android:layout_marginLeft="50dp"
+        android:layout_centerInParent="true"/>
+    <EditText
+        android:layout_width="300dp"
+        android:id="@+id/Rpass"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@+id/Remail"
+        android:elevation="6dp"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/pink"
+        android:background="@drawable/epcolor"
+        android:padding="16dp"
+        android:layout_marginLeft="50dp"
+        android:layout_centerInParent="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <com.hbb20.CountryCodePicker
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/country"
+        android:layout_below="@+id/Rpass"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Rpass"
+        android:layout_alignStart="@+id/country"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/pink"
+        android:layout_marginEnd="57dp"
+        android:elevation="6dp"
+        android:background="@drawable/epcolor"
+        android:hint="Phone number"
+        android:padding="16dp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number"
+        android:layout_marginTop="90dp"
+        android:layout_centerInParent="true"
+        android:text="Go"
+        android:id="@+id/regbtn"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:background="@drawable/gobtn"/>
+
+
+
+</RelativeLayout>

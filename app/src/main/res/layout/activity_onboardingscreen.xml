@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onboardingscreen"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="900dp"
+        android:id="@+id/welcomeimg"
+        android:layout_height="700dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="380dp"
+        android:src="@drawable/onboarddesign" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="welcome to kavi's"
+        android:gravity="center"
+        android:textSize="28dp"
+        android:textColor="@color/pink"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/withus"
+        android:layout_below="@id/dreamjob"
+        android:elevation="20dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hey beautiful,"
+        android:gravity="center"
+        android:textSize="28dp"
+        android:textColor="@color/pink"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/dreamjob"
+        android:elevation="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to our application, We're excited to give"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_below="@id/withus"
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/onboard1"
+        android:elevation="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You a amazing skincare products."
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_below="@id/onboard1"
+        android:textColor="@color/black"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/onboard2"
+        android:elevation="20dp"/>
+
+    <ImageView
+        android:layout_width="5000dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/onboardui2"
+        android:layout_below="@+id/withus"
+        android:layout_marginTop="82dp"/>
+
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/onboard2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/gobtn"
+        android:elevation="50dp"
+        android:shadowColor="@color/blue"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/onboard2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="54dp"
+        android:background="@drawable/epcolor"
+        android:elevation="50dp"
+        android:shadowColor="@color/blue"
+        android:text="Register"
+        android:textColor="@color/Green"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

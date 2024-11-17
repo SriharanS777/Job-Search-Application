@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".forgetpass"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forget Password"
+        android:textStyle="bold"
+        android:id="@+id/fpasstext1"
+        android:textSize="26dp"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/pink"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't worry enter your registered email id"
+        android:layout_below="@id/fpasstext1"
+        android:id="@+id/fpasstext2"
+        android:layout_marginTop="14dp"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="to receive password resert link"
+        android:layout_below="@id/fpasstext2"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:layout_marginRight="20dp"
+        android:textSize="18dp"
+        android:id="@+id/fpasstext3"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+<ImageView
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:layout_marginTop="30dp"
+    android:layout_below="@+id/fpasstext3"
+    android:src="@drawable/forgetpasslogo"
+    android:layout_centerInParent="true"
+    android:id="@+id/fpasslogo"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:id="@+id/fpassemail"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:elevation="6dp"
+        android:layout_below="@+id/fpasslogo"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/pink"
+        android:background="@drawable/epcolor"
+        android:padding="16dp"
+        android:layout_marginLeft="50dp"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fpassemail"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:text="Send"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:background="@drawable/gobtn"
+        android:padding="16dp"/>
+
+
+
+
+</RelativeLayout>
